@@ -1,15 +1,27 @@
 #include <stdio.h>
 
-import sys
+void fibonacci_sequence(int n) {
+    int i;
+    unsigned long long fib[50];  // Use unsigned long long to handle large Fibonacci numbers
+    
+    fib[0] = 1;
+    fib[1] = 2;
+    
+    for (i = 2; i < n; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+    
+    for (i = 0; i < n; i++) {
+        printf("%llu", fib[i]);
+        if (i != n-1) {
+            printf(", ");
+        }
+    }
+    
+    printf("\n");
+}
 
-def fibonacci_sequence(n):
-    sequence = [1, 2]  # Starting with 1 and 2
-    for i in range(2, n):
-        sequence.append(sequence[i-1] + sequence[i-2])
-    return sequence
-
-fib_numbers = fibonacci_sequence(50)
-fib_str = ', '.join(map(str, fib_numbers))
-print(fib_str)
-sys.stdout.flush()  # Ensure the output is flushed immediately
-
+int main() {
+    fibonacci_sequence(50);
+    return 0;
+}
