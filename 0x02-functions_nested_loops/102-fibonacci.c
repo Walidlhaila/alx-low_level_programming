@@ -1,31 +1,29 @@
 #include <stdio.h>
 
-void fibonacci_sequence(int n)
+/**
+ * main - prints the first 52 fibonacci numbers
+ * Return: Nothing!
+ */
+
+int main(void)
+
 {
-	int i;
-	unsigned long fib[50];  // Use unsigned long to handle large Fibonacci numbers
+	int i = 0;
+	long j = 1, k = 2;
 
-	fib[0] = 1;
-	fib[1] = 2;
-
-	for (i = 2; i < n; i++)
-		fib[i] = fib[i-1] + fib[i-2];
-}
-
-for (i = 0; i < n; i++)
-{
-	printf("%lu", fib[i]);
-	if (i != n-1)
+	while (i < 50)
 	{
-		printf(", ");
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
+		{
+			k += j;
+			printf(", %ld", k);
+		}
+		++i;
 	}
-}
-
-printf("\n");
-}
-
-int main()
-{
-	fibonacci_sequence(50);
-	return 0;
+	printf("\n");
+	return (0);
 }
