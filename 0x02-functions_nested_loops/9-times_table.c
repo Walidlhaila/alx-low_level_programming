@@ -2,6 +2,7 @@
 
 /**
  * times_table - Prints the 9 times table, starting from 0.
+ *
  * Description: This function prints the multiplication table for the numbers
  * 0 through 9. Each row represents a number, and each column
  * represents the product of that number multiplied by another
