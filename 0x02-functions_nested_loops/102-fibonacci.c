@@ -28,5 +28,5 @@ void fibonacci_sequence(int n)
 int main(void)
 {
 	fibonacci_sequence(50);
-	return 0;
+	return (0);
 }
