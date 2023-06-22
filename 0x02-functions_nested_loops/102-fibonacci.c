@@ -2,42 +2,31 @@
 #include <stdio.h>
 
 /**
- * Generates and prints the fibonacci sequence up to the given number of terms.
- *
- * @param n The number of terms in the Fibonacci sequence to generate.
+ * main- Prints the first 52 fibonacci numbers
+ * Return: Nothing!
  */
-void fibonacci_sequence(int n)
-{
-	int i;
-	unsigned long fib[50];
 
-	fib[0] = 1;
-	fib[1] = 2;
-
-	for (i = 2; i < n; i++)
-	{
-		fib[i] = fib[i - 1] + fib[i - 2];
-	}
-
-	for (i = 0; i < n; i++)
-	{
-		printf("%lu", fib[i]);
-		if (i != n - 1)
-		{
-			printf(", ");
-		}
-	}
-
-	printf("\n");
-}
-
-/**
- * The entry point of the program.
- *
- * @return The exit status of the program.
- */
 int main(void)
+
 {
-	fibonacci_sequence(50);
+	int i = 0;
+	long j = 1, k = 2;
+
+	while (i < 50)
+	{
+		if (if == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld, k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
+		++i;
+	}
+	printf("\n");
 	return (0);
+
 }
