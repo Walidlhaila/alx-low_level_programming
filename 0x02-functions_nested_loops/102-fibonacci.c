@@ -32,6 +32,8 @@ void fibonacci_sequence(int n)
 
 /**
  * The entry point of the program.
+ *
+ * @return The exit status of the program.
  */
 int main(void)
 {
