@@ -7,6 +7,7 @@
  */
 void fibonacci_sequence(int n)
 {
+	Calculate and print the Fibonacci sequence
 	int i;
 	unsigned long fib[50];
 
