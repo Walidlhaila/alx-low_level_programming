@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * Generates and prints the fibonacci sequence up to the given number of terms.
+ *
+ * @param n The number of terms in the Fibonacci sequence to generate.
+ */
 void fibonacci_sequence(int n)
 {
 	int i;
@@ -25,6 +30,9 @@ void fibonacci_sequence(int n)
 	printf("\n");
 }
 
+/**
+ * The entry point of the program.
+ */
 int main(void)
 {
 	fibonacci_sequence(50);
