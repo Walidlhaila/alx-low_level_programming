@@ -1,33 +1,21 @@
 
 #include <stdio.h>
 
-/**
- * main- Prints the first 52 fibonacci numbers
- * Return: Nothing!
- */
+int main(void) {
+    long prev = 1;
+    long current = 2;
+    long sum = 0;
 
-int main(void)
+    while (current <= 4000000) {
+        if (current % 2 == 0) {
+            sum += current;
+        }
 
-{
-	int i = 0;
-	long j = 1, k = 2;
+        long next = prev + current;
+        prev = current;
+        current = next;
+    }
 
-	while (i < 50)
-	{
-		if (if == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld, k);
-		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
-		}
-		++i;
-	}
-
-	printf("%ld\n
-	return (0);
-
+    printf("%ld\n", sum);
+    return 0;
 }
